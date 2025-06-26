@@ -1,0 +1,6 @@
+SELECT DISTINCT ci.NAME
+FROM CITY AS ci
+JOIN COUNTRY AS co
+  ON ci.CountryCode = co.Code
+WHERE co.Continent = 'Africa'
+ORDER BY ci.NAME;
